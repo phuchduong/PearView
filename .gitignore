@@ -216,3 +216,30 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- FRONTEND (Metronic / Node) ---
+node_modules/
+dist/
+build/
+.sass-cache/
+*.css.map
+*.js.map
+
+# --- WINDOWS SYSTEM FILES ---
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# --- SAAS & SECURITY ---
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+private_modules/
+secrets.json
+
+# --- BACKUPS ---
+*.bak
+*.tmp
+temp/
