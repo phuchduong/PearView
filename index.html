@@ -3,7 +3,13 @@ Product: PearView
 
 Description: PearView is a whimsical yet powerful financial analytics suite from Happy & Pear designed to help investors find the "sweet spot" in market cycles. By transforming raw historical data into interactive visualizations, PearView provides clarity on momentum, value, and strategic accumulation windows.
 
-Version: v0.1.0
+Version: v0.1.1
+Creation Date: 4/26/2026
+Last Updated : 4/27/206
+
+Technologies:
+  ApexCharts
+  Metronics Template (Tailwind HTML Template 6)
 
 Ownership:
   Happy and Pear LLC
@@ -14,10 +20,12 @@ Author:
 Contact: phuchduong@hotmail.com
 Website: https://phuchduong.github.io/PearView/
 
+Repo: https://github.com/phuchduong/PearView
 License: https://github.com/phuchduong/PearView/blob/main/LICENSE
 -->
+
 <!DOCTYPE html>
-<!-- 
+<!--
   class="h-full":
     This is a Tailwind CSS utility class that sets height: 100% on the root element. In modern web development, this is essential for layouts that require a full-height background or a sticky footer. Without this, the body might only be as tall as its content rather than filling the entire viewport.
   data-kt-theme="true"
@@ -40,7 +48,7 @@ License: https://github.com/phuchduong/PearView/blob/main/LICENSE
   <!-- A <base> tag acts as a starting point for every relative URL on your page. By setting it to ../../, you are telling the browser that for every image, script, or stylesheet you link, it should first go up two levels from the current folder. -->
   <!-- <base href="../../"> -->
   <title>
-   Metronic - Tailwind CSS - HTML Template 7
+   PearView - Find ripe investments
   </title>
   <meta charset="utf-8"/>
   <!--
@@ -70,13 +78,8 @@ License: https://github.com/phuchduong/PearView/blob/main/LICENSE
 
       Multiple domains: If the same content is hosted across different domains, the tag directs all credit to the primary source.
 
-      The specific URL in your code
-      In your snippet, the URL is https://127.0.0.1:8001/metronic-html-starter-kit/layout-9/index.html.
-
-      It is worth noting that 127.0.0.1 is a "localhost" address, which means it points to your own computer. While this works for development, you should update this link to your actual website domain (e.g., https://www.yourdomain.com/...) before the site goes live. If you launch with a localhost canonical tag, search engines will not be able to index the page properly because they cannot visit your personal computer to verify the link.
    -->
-  <!-- <link href="https://127.0.0.1:8001/metronic-html-starter-kit/layout-9/index.html" rel="canonical"/> -->
-  <link href="https://phuchduong.github.io/algorithmic-codex/metronics_theme_9_starter_kit/" rel="canonical"/>
+  <link href="https://phuchduong.github.io/PearView/" rel="canonical"/>
 
   <!-- 
     viewport
@@ -99,7 +102,7 @@ License: https://github.com/phuchduong/PearView/blob/main/LICENSE
     This meta tag is a placeholder for a Meta Description. It is a brief summary of a website page that appears underneath the clickable title in search engine results.
     Search engines typically display the first 150 to 160 characters of a description.
   -->
-  <meta content="A starter kit for deploying Metronic layout #9 to GitHub Pages. Includes all necessary HTML boilerplate and configurations." name="description"/>
+  <meta content="PearView is a whimsical yet powerful financial analytics suite from Happy & Pear designed to help investors find the "sweet spot" in market cycles." name="description"/>
 
   <!-- Twitter Cards protocol. -->
   <!-- twitter:site: This identifies the main Twitter account associated with the website. -->
@@ -109,12 +112,12 @@ License: https://github.com/phuchduong/PearView/blob/main/LICENSE
   <!-- twitter:card: This defines the layout of the post. The value summary_large_image tells the platform to display a prominent, full-width image above the title and description, which usually results in higher engagement than a small thumbnail. -->
   <meta content="summary_large_image" name="twitter:card"/>
   <!-- twitter:title: This is the headline that appears on the card. It is often the same as your <title> tag, but you can change it here if you want a different headline for social media users. -->
-  <meta content="Metronic - Tailwind CSS - HTML Template 7" name="twitter:title"/>
+  <meta content="PearView - Find ripe investments" name="twitter:title"/>
   <!-- twitter:description: Just like the standard meta description, this provides a brief summary of the page for the social media card. Should be updated to match the description. -->
-  <meta content="A starter kit for deploying Metronic layout #9 to GitHub Pages. Includes all necessary HTML boilerplate and configurations." name="twitter:description"/>
+  <meta content="PearView is a whimsical yet powerful financial analytics suite from Happy & Pear designed to help investors find the "sweet spot" in market cycles." name="twitter:description"/>
   <!-- twitter:image: This provides the path to the specific image that should appear on the card. -->
   <!-- <meta content="assets/media/app/og-image.png" name="twitter:image"/> -->
-  <meta content="https://phuchduong.github.io/algorithmic-codex/metronics_theme_9_starter_kit/assets/media/app/og-image.png" name="twitter:image"/>
+  <meta content="https://phuchduong.github.io/PearView/assets/media/app/og-image.png" name="twitter:image"/>
 
   <!--
     Open Graph protocol.
@@ -125,7 +128,7 @@ License: https://github.com/phuchduong/PearView/blob/main/LICENSE
     Link Consistency: It ensures that when someone clicks the "preview card" on Facebook or LinkedIn, they are sent to the exact address you specified here, rather than a temporary or tracked link.
   -->
   <!-- <meta content="https://127.0.0.1:8001/metronic-html-starter-kit/layout-9/index.html" property="og:url"/> -->
-  <meta content="https://phuchduong.github.io/algorithmic-codex/metronics_theme_9_starter_kit/" property="og:url"/>
+  <meta content="https://phuchduong.github.io/PearView/" property="og:url"/>
   <!-- og:locale: This tells social media crawlers the language and region of your content. It helps platforms provide the correct localized interface around your link. For example, if your site was in Vietnamese, you would use vi_VN so the platform knows how to categorize and display the content to the right audience. -->
   <meta content="en_US" property="og:locale"/>
   <!-- og:type: This describes the nature of your content. This is the default type for most homepages. Other types include article, book, or video.movie. The type changes how the content is displayed; for instance, an article type might show the author and publication date in the link preview. -->
@@ -135,13 +138,13 @@ License: https://github.com/phuchduong/PearView/blob/main/LICENSE
   -->
   <meta content="Algorithmic Codex" property="og:site_name"/>
   <!-- og:title: This is the "headline" of your social media card. -->
-  <meta content="Metronic - Tailwind CSS - HTML Template 7" property="og:title"/>
+  <meta content="PearView - Find ripe investments" property="og:title"/>
   <!-- og:description: This is the short paragraph that appears under the title in a link preview. -->
-  <meta content="A starter kit for deploying Metronic layout #9 to GitHub Pages. Includes all necessary HTML boilerplate and configurations." property="og:description"/>
+  <meta content="PearView is a whimsical yet powerful financial analytics suite from Happy & Pear designed to help investors find the "sweet spot" in market cycles." property="og:description"/>
   <!-- og:image: This defines the visual thumbnail for the link.
     This is arguably the most important tag for engagement. It points to the image file that will be shown in the preview. -->
   <!-- <meta content="assets/media/app/og-image.png" property="og:image"/> -->
-  <meta content="https://phuchduong.github.io/algorithmic-codex/metronics_theme_9_starter_kit/assets/media/app/og-image.png" property="og:image"/>
+  <meta content="https://phuchduong.github.io/PearView/assets/media/app/og-image.png" property="og:image"/>
 
   <!--
     rel="apple-touch-icon"
@@ -152,7 +155,7 @@ License: https://github.com/phuchduong/PearView/blob/main/LICENSE
       If you do not include this tag, iOS will try to generate an icon by taking a tiny screenshot of your webpage, which often looks blurry or unprofessional. By providing a dedicated icon, you make your web application feel like a native app.
   -->
   <!-- <link href="assets/media/app/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/> -->
-  <link href="https://phuchduong.github.io/algorithmic-codex/metronics_theme_9_starter_kit/assets/media/app/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="https://phuchduong.github.io/PearView/assets/media/app/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 
   <!-- 
   Favicon
@@ -160,13 +163,13 @@ License: https://github.com/phuchduong/PearView/blob/main/LICENSE
    -->
   <!-- favicon-32x32.png: This is the standard size for most modern desktop browser tabs. Using a PNG allows for better quality and transparency compared to older formats. -->
   <!-- <link href="assets/media/app/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/> -->
-  <link href="https://phuchduong.github.io/algorithmic-codex/metronics_theme_9_starter_kit/assets/media/app/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="https://phuchduong.github.io/PearView/assets/media/app/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
   <!-- favicon-16x16.png: This smaller version is used in more cramped spaces, such as the address bar or within a folder in your bookmarks bar. -->
   <!-- <link href="assets/media/app/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/> -->
-  <link href="https://phuchduong.github.io/algorithmic-codex/metronics_theme_9_starter_kit/assets/media/app/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="https://phuchduong.github.io/PearView/assets/media/app/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
   <!-- favicon.ico: This is a legacy format. The .ico file is unique because it can actually contain multiple sizes (16, 32, and 48 pixels) inside a single file. It is included here as a "fallback" for older browsers or specific windows services that might not support PNG icons. -->
   <!-- <link href="assets/media/app/favicon.ico" rel="shortcut icon"/> -->
-  <link href="https://phuchduong.github.io/algorithmic-codex/metronics_theme_9_starter_kit/assets/media/app/favicon.ico" rel="shortcut icon"/>
+  <link href="https://phuchduong.github.io/PearView/assets/media/app/favicon.ico" rel="shortcut icon"/>
 
   <!-- Inter font family from Google Fonts
     It allows you to use a high-quality, modern typeface that isn't pre-installed on most users' computers.
@@ -250,7 +253,7 @@ License: https://github.com/phuchduong/PearView/blob/main/LICENSE
         <img class="hidden dark:inline-block w-8 shrink-0" src="assets/media/app/mini-logo-circle-dark.svg"/>
        </a>
        <h3 class="text-mono text-lg font-medium hidden md:block">
-        Metronic
+        PearView
        </h3>
       </div>
       <!-- Navs -->
@@ -258,7 +261,8 @@ License: https://github.com/phuchduong/PearView/blob/main/LICENSE
        <div class="border-e border-border h-5 mx-4">
        </div>
        <!-- Nav -->
-       <div class="kt-menu kt-menu-default" data-kt-menu="true">
+      <!--
+      <div class="kt-menu kt-menu-default" data-kt-menu="true">
         <div class="kt-menu-item" data-kt-menu-item-offset="0,10px" data-kt-menu-item-placement="bottom-start" data-kt-menu-item-placement-rtl="bottom-end" data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="hover">
          <button class="kt-menu-toggle text-mono text-sm font-medium">
           TeamRafa
@@ -293,6 +297,7 @@ License: https://github.com/phuchduong/PearView/blob/main/LICENSE
          </div>
         </div>
        </div>
+       -->
        <!-- End of Nav -->
        <div class="border-e border-border h-5 mx-4">
        </div>
